@@ -1,13 +1,13 @@
-module:
-  description: Results presentation service
-  type: container
-  name: result
-  services:
-    - name: result
-      ingresses:
-        - path: /
-          port: ui
-      ports:
-        - name: ui
-          protocol: TCP
-          containerPort: 80
+kind: Module
+description: Results presentation service
+type: container
+name: result
+services:
+  - name: result
+    ingresses:
+      - path: /
+        port: ui
+    ports:
+      - name: ui
+        protocol: TCP
+        containerPort: 80
