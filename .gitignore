@@ -9,6 +9,7 @@ node_modules
 .idea
 *.iml
 /.vscode
+/.history
 
 # Runtime files
 .garden
