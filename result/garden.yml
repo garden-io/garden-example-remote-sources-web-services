@@ -8,8 +8,8 @@ description: Results UI service
 type: container
 name: result
 build: result
-dependencies:
-  - run.db-init
+# dependencies:
+#   - run.db-init
 spec:
   args: [nodemon, server.js]
   ingresses:
@@ -30,6 +30,6 @@ kind: Test
 name: results-integ
 type: container
 build: result
-dependencies: [run.db-init]
+# dependencies: [run.db-init]
 spec:
   args: [echo, ok]

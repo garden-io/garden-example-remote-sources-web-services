@@ -8,8 +8,8 @@ description: The backend for the voting UI
 name: api
 type: container
 build: api
-dependencies:
-  - deploy.redis
+# dependencies:
+#   - deploy.redis
 spec:
   args: [python, app.py]
   ports:

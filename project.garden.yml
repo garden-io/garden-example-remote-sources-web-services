@@ -1,0 +1,14 @@
+apiVersion: garden.io/v1
+kind: Project
+name: web-services
+defaultEnvironment: dev
+environments:
+  - name: dev
+providers:
+  - name: local-kubernetes
+    environments: [dev]
+    namespace: web-services-${local.username}
+    context: orbstack
+
+variables:
+  baseHostname: foo
